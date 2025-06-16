@@ -175,6 +175,122 @@
             cursor: pointer;
             z-index: 1;
         }
+
+        /* Responsiveness for Tablets */
+
+        @media (max-width: 1024px) {
+
+            .Nav-links {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            .Nav-links li {
+                flex: 1 1 auto;
+                font-size: 14px;
+                padding: 0 10px;
+                border-right: 1px solid var(--secondary-color);
+            }
+
+            .Nav-links li:last-child {
+                border-right: none;
+            }
+
+            /* Hero Section */
+            .overlay-box {
+                flex-direction: column;
+                height: auto;
+                padding: 20px;
+            }
+
+            .section1,
+            .section2 {
+                width: 80%;
+                height: auto;
+                margin-bottom: 20px;
+            }
+
+            /* Middle Part */
+            .important {
+                width: 80%;
+                padding: 15px;
+            }
+
+            .love {
+                font-size: 15px;
+            }
+
+            /* Footer Icon */
+            .site-footer img {
+                width: 36px;
+                height: 36px;
+            }
+        }
+
+        /* Responsiveness for Mobile Devices */
+        @media (max-width: 600px) {
+
+            .Nav-links {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            .Nav-links li {
+                flex: 1 1 auto;
+                font-size: 13px;
+                padding: 0 8px;
+                border-right: 1px solid var(--secondary-color);
+            }
+
+            .Nav-links li:last-child {
+                border-right: none;
+            }
+
+            /* Hero Section */
+            .overlay-box {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+
+            .section1,
+            .section2 {
+                width: 90%;
+                height: auto;
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+            /* Middle Part */
+
+            .important {
+                width: 90%;
+                padding: 10px;
+            }
+
+            .love {
+                font-size: 14px;
+            }
+
+            /* Footer Icon */
+
+            .site-footer img {
+                width: 32px;
+                height: 32px;
+                bottom: 10px;
+                right: 10px;
+            }
+        }
     </style>
 </head>
 
